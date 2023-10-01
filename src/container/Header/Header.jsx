@@ -19,7 +19,17 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div className="app__header app__flex">
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        height: "100%",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingBottom: "3rem",
+      }}
+      className="app__header"
+    >
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -46,19 +56,32 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
+      <div
+        style={{
+          // Container background color (you can change it to your preferred color)
+          width: "50%", // Container width
+          height: "0",
+          paddingBottom: "50%", // Aspect ratio for a 1:1 square container
+          overflow: "hidden",
+          position: "relative",
+          borderRadius: "50%", // Make the container a circle
+          boxShadow: "0 0 40px rgba(128, 128, 128, 0.5)", // Cool grey shadow
+        }}
       >
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          src={images.circle}
-          alt="profile-circle"
-          className="overlay_circle"
+        <img
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            position: "absolute",
+            top: "0",
+            left: "0",
+            borderRadius: "50%", // Make the image itself a circle
+          }}
+          src={images.profile}
+          alt="Profile"
         />
-      </motion.div>
+      </div>
     </div>
   );
 };

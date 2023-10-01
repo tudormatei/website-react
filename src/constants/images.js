@@ -23,6 +23,9 @@ import tfLogo from "../assets/tfLogo.png";
 import trafficSign from "../assets/traffic-sign-recognition.jpg";
 import unity from "../assets/unity.png";
 import circle from "../assets/circle.svg";
+import grpc from "../assets/grpc.png";
+import linux from "../assets/linux.png";
+import redux from "../assets/redux.png";
 
 import ai from "../assets/ai.png";
 import softwareEngineer from "../assets/software-engineering.jpeg";
@@ -33,6 +36,10 @@ import github from "../assets/github.png";
 
 import cv from "../assets/CV_Tudor Matei.pdf";
 import profile from "../assets/profile_pic.jpg";
+
+import instagramSocial from "../assets/instagram-socials.png";
+import githubSocial from "../assets/github-socials.png";
+import linkedInSocial from "../assets/linkedin-socials.png";
 
 export default {
   react,
@@ -67,4 +74,10 @@ export default {
   github,
   cv,
   profile,
+  instagramSocial,
+  githubSocial,
+  linkedInSocial,
+  grpc,
+  linux,
+  redux,
 };

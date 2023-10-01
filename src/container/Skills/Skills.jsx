@@ -14,14 +14,15 @@ const skills = [
   { title: "C-Sharp", imgUrl: images.csharp },
   { title: "Java", imgUrl: images.java },
   { title: "Spring", imgUrl: images.springBoot },
+  { title: "gRPC", imgUrl: images.grpc },
   { title: "React", imgUrl: images.react },
+  { title: "Redux", imgUrl: images.redux },
   { title: "JavaScript", imgUrl: images.javascript },
   { title: "HTML", imgUrl: images.html },
   { title: "CSS", imgUrl: images.css },
   { title: "Unity", imgUrl: images.unity },
-  { title: "Blender", imgUrl: images.blender },
   { title: "Git", imgUrl: images.git },
-  { title: "Office", imgUrl: images.office },
+  { title: "Linux", imgUrl: images.linux },
 ];
 
 const experiences = [
